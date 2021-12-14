@@ -1,0 +1,58 @@
+!Job
+target: !Target
+  head: a96c930091aa2f3be0668986b9b4e85a158c90cb
+  email: travis@example.org
+  branch: fix/change-cache-policy
+  remote: https://github.com/s1mbi0se/arrow
+  version: 4.0.0.dev1187
+  no_rc_version: 4.0.0.dev1187
+  no_rc_semver_version: 4.0.0-dev1187
+tasks:
+  java-jars: !Task
+    ci: github
+    template: java-jars/github.yml
+    artifacts:
+    - arrow-algorithm-4.0.0.dev1187-SNAPSHOT-tests.jar
+    - arrow-algorithm-4.0.0.dev1187-SNAPSHOT.jar
+    - arrow-avro-4.0.0.dev1187-SNAPSHOT-tests.jar
+    - arrow-avro-4.0.0.dev1187-SNAPSHOT.jar
+    - arrow-compression-4.0.0.dev1187-SNAPSHOT-tests.jar
+    - arrow-compression-4.0.0.dev1187-SNAPSHOT.jar
+    - arrow-dataset-4.0.0.dev1187-SNAPSHOT-tests.jar
+    - arrow-dataset-4.0.0.dev1187-SNAPSHOT.jar
+    - arrow-format-4.0.0.dev1187-SNAPSHOT-tests.jar
+    - arrow-format-4.0.0.dev1187-SNAPSHOT.jar
+    - arrow-gandiva-4.0.0.dev1187-SNAPSHOT-tests.jar
+    - arrow-gandiva-4.0.0.dev1187-SNAPSHOT.jar
+    - arrow-jdbc-4.0.0.dev1187-SNAPSHOT-tests.jar
+    - arrow-jdbc-4.0.0.dev1187-SNAPSHOT.jar
+    - arrow-memory-core-4.0.0.dev1187-SNAPSHOT-tests.jar
+    - arrow-memory-core-4.0.0.dev1187-SNAPSHOT.jar
+    - arrow-memory-netty-4.0.0.dev1187-SNAPSHOT-tests.jar
+    - arrow-memory-netty-4.0.0.dev1187-SNAPSHOT.jar
+    - arrow-memory-unsafe-4.0.0.dev1187-SNAPSHOT-tests.jar
+    - arrow-memory-unsafe-4.0.0.dev1187-SNAPSHOT.jar
+    - arrow-orc-4.0.0.dev1187-SNAPSHOT-tests.jar
+    - arrow-orc-4.0.0.dev1187-SNAPSHOT.jar
+    - arrow-performance-4.0.0.dev1187-SNAPSHOT-tests.jar
+    - arrow-performance-4.0.0.dev1187-SNAPSHOT.jar
+    - arrow-plasma-4.0.0.dev1187-SNAPSHOT-tests.jar
+    - arrow-plasma-4.0.0.dev1187-SNAPSHOT.jar
+    - arrow-tools-4.0.0.dev1187-SNAPSHOT-jar-with-dependencies.jar
+    - arrow-tools-4.0.0.dev1187-SNAPSHOT-tests.jar
+    - arrow-tools-4.0.0.dev1187-SNAPSHOT.jar
+    - arrow-vector-4.0.0.dev1187-SNAPSHOT-shade-format-flatbuffers.jar
+    - arrow-vector-4.0.0.dev1187-SNAPSHOT-tests.jar
+    - arrow-vector-4.0.0.dev1187-SNAPSHOT.jar
+    - benchmarks.jar
+    - flight-core-4.0.0.dev1187-SNAPSHOT-jar-with-dependencies.jar
+    - flight-core-4.0.0.dev1187-SNAPSHOT-shaded-ext.jar
+    - flight-core-4.0.0.dev1187-SNAPSHOT-shaded.jar
+    - flight-core-4.0.0.dev1187-SNAPSHOT-tests.jar
+    - flight-core-4.0.0.dev1187-SNAPSHOT.jar
+    - flight-grpc-4.0.0.dev1187-SNAPSHOT-tests.jar
+    params: {}
+    branch: nightly-958-github-java-jars
+    commit: bf6f9a6aa9cb2af03c9322960d8a23a07b8054bd
+params: {}
+branch: nightly-958
